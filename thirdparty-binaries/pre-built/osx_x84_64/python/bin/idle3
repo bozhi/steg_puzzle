@@ -1,0 +1,5 @@
+#!/Users/james/Documents/git_repos/switch-embedded/thirdparty-binaries/source/native/python/../../../pre-built/osx_x86_64/python/bin/python3.5
+
+from idlelib.PyShell import main
+if __name__ == '__main__':
+    main()
