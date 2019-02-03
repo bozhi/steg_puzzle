@@ -27,3 +27,11 @@ fi
 
 "$PYTHON_TO_INSTALL" -m venv "$BASEDIR/env"
 ln -nsf "$BASEDIR/env/lib/${VERSIONED_PYTHON}/site-packages" "$BASEDIR/site-packages"
+
+PACKAGES="$BASEDIR/thirdparty/python/dev_requirements.txt"
+
+"$VENV_PYTHON" -m pip install \
+    --no-cache-dir \
+    --no-index \
+    --find-links "$BASEDIR/thirdparty-binaries/python/wheels" \
+    -r "$PACKAGES"
