@@ -1,5 +1,11 @@
 This is a toy puzzle meant for fun
 
+Setup:
+  ./setup.sh
+
+Run:
+  source env/bin/activate
+
 Usage:
 - To encrypt
   ./steganography.py --mode encrypt --original_image <ORIGINAL_IMAGE> --payload_image <PAYLOAD_IMAGE> --output_filepath <OUTPUT_FILEPATH>
